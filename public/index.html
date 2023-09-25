@@ -6,6 +6,7 @@
     <title>Add Review</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <h1>Add Review</h1>
@@ -28,13 +29,13 @@
       ><br /><br />
 
       <label for="rating">Rating:</label>
-      <select id="rating" name="rating" required>
-        <option value="1">★</option>
-        <option value="2">★★</option>
-        <option value="3">★★★</option>
-        <option value="4">★★★★</option>
-        <option value="5">★★★★★</option></select
-      ><br /><br />
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <input type="hidden" id="rating" name="rating" value="0" />
+      <br /><br />
       <input type="submit" value="Submit Review" />
     </form>
     <br /><br /><br />

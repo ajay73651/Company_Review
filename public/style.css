@@ -2,7 +2,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #a38b8b;
   margin: 0;
-  padding: 50px;
+  padding-top: 20px !important;
+  padding: 250px;
 }
 
 h1 {
@@ -74,4 +75,9 @@ input[type="submit"]:hover {
 
 #submit:hover {
   background-color: #0056b3;
+}
+
+
+.checked {
+  color: orange;
 }
