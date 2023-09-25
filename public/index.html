@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Review</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Add Review</h1>
+
+    <form action="/submit_review" method="POST">
+      <label for="company_name">Company Name:</label>
+      <input
+        type="text"
+        id="company_name"
+        name="company_name"
+        required
+      /><br /><br />
+
+      <label for="pros">Pros:</label><br />
+      <textarea id="pros" name="pros" rows="4" cols="50" required></textarea
+      ><br /><br />
+
+      <label for="cons">Cons:</label><br />
+      <textarea id="cons" name="cons" rows="4" cols="50" required></textarea
+      ><br /><br />
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="1">★</option>
+        <option value="2">★★</option>
+        <option value="3">★★★</option>
+        <option value="4">★★★★</option>
+        <option value="5">★★★★★</option></select
+      ><br /><br />
+      <input type="submit" value="Submit Review" />
+    </form>
+    <br /><br /><br />
+    <form id="searchForm">
+      <input type="text" id="search" />
+      <input type="submit" name="submit" id="submit" />
+    </form>
+    <br />
+    <h1>Company Review</h1>
+    <div id="reviewsCompany"></div>
+    <div id="reviewsContainer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
