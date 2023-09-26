@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (responseData.message === "success") {
         swal
           .fire({
-            title: "Your Attendance has been submitted successfully.",
+            title: "Your Review has been submitted successfully.",
             icon: "success",
             timer: 2000,
             buttons: false,
